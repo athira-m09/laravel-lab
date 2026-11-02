@@ -7,6 +7,10 @@
         <p>{{ session('status') }}</p>
     @endif
 
+    @if (session('success'))
+    <p>{{ session('success') }}</p>
+    @endif
+
     <p><a href="{{ route('students.create') }}">Add Student</a></p>
 
     @foreach ($students as $student)
